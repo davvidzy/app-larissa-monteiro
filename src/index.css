@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+/* Tokens da marca — os mesmos da landing (design-system/bellash_academy_design_system.json) */
+@theme {
+  --color-primary: #862D59;
+  --color-primary-hover: #71344F;
+  --color-primary-light: #F6D0E0;
+  --color-rose: #A44B74;
+  --color-blush: #FFF6FA;
+  --color-soft-pink: #FCEBF2;
+  --color-champagne: #D8B77E;
+  --color-ink: #231D21;
+  --color-ink-soft: #50454B;
+  --color-line: #EDE6E9;
+  --color-surface: #FFFFFF;
+  --color-success: #15803D;
+  --color-error: #B42318;
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "DM Sans", Arial, sans-serif;
+
+  --radius-card: 18px;
+  --radius-button: 12px;
+
+  --shadow-soft: 0 2px 8px #3018270D;
+  --shadow-card: 0 8px 24px #30182714;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-[#FCFAFB] font-sans text-[15px] leading-[1.55] text-ink antialiased;
+  }
+
+  .font-display,
+  h1,
+  h2 {
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--color-primary-light);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 3px;
+  }
+
+  /* Relatórios em PDF: só o bloco .print-only aparece na impressão */
+  .print-only {
+    display: none;
+  }
+
+  @media print {
+    body > :not(.print-only) {
+      display: none !important;
+    }
+    .print-only {
+      display: block;
+    }
+    body {
+      background: #ffffff;
+    }
+    @page {
+      size: A4;
+      margin: 16mm;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

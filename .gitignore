@@ -1,0 +1,16 @@
+# Claude Code
+.claude/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+
+# Dependências e build (o build é gerado pelo GitHub Actions, em .github/workflows/deploy.yml)
+node_modules/
+dist/
+.env
+.env.*
