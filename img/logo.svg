@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="274" height="60" viewBox="22 12 274 60">
+<!-- Logo lateral oficial (design-system/bellash-logo-lateral.svg) com o espaço vazio das bordas recortado -->
+<g transform="translate(6 24) scale(.9)"><g fill="none" stroke="#A44B74" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M32 28 Q60 0 88 28 Q60 46 32 28Z"/>
+<path d="M37 22 L31 12 M48 17 L46 6 M61 17 L62 4 M74 18 L79 7 M85 22 L92 13"/>
+</g></g>
+<text x="222" y="47" font-family="Georgia, 'Times New Roman', serif" font-size="37" font-style="italic" fill="#71344F" text-anchor="middle">Bellash</text>
+<text x="222" y="67" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="5.5" fill="#A44B74" text-anchor="middle">ACADEMY</text>
+</svg>
